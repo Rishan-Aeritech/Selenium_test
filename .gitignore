@@ -1,0 +1,6 @@
+/build/
+/assets/
+/archived_logs/
+/.vscode/
+/.pytes_cache/
+/__pycache__/

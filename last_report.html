@@ -4,10 +4,193 @@
     <meta charset="utf-8"/>
     <title id="head-title">report.html</title>
       <link href="assets\style.css" rel="stylesheet" type="text/css"/>
-  </head>
+  </head><link rel="shortcut icon" href="data:image/gif;base64,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">
   <body>
-    <h1 id="title">report.html</h1>
-    <p>Report generated on 07-Jan-2025 at 14:24:05 by <a href="https://github.com/seleniumbase/SeleniumBase">SeleniumBase</a> and <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+    
+<script src="https://code.highcharts.com/10.3.3/highcharts.js"></script>
+<script src="https://code.highcharts.com/10.3.3/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/10.3.3/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/10.3.3/modules/accessibility.js"></script>
+
+<style>
+.highcharts-figure, .highcharts-data-table table {
+    min-width: 320px;
+    max-width: 660px;
+    margin: 1em auto;
+}
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #EBEBEB;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+.highcharts-data-table td, .highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+</style>
+
+<figure class="highcharts-figure">
+    <div id="chartcontainer_1_1"></div>
+    <p class="highcharts-description"></p>
+</figure>
+
+<script>
+// Build the chart
+Highcharts.chart('chartcontainer_1_1', {
+credits: {
+    enabled: false
+},
+title: {
+    text: 'SeleniumBase Dashboard ⚪'
+},
+subtitle: {
+    text: ''
+},
+xAxis: {
+    labels: {
+        useHTML: true,
+        style: {
+            fontSize: '14px',
+        },
+    },
+categories: ['Passed','Untested','Skipped','Failed',], crosshair: false},
+yAxis: {
+
+    title: {
+        text: 'Values',
+        style: {
+            fontSize: '14px'
+        }
+    },
+    labels: {
+        useHTML: true,
+        style: {
+            fontSize: '14px'
+        }
+    }
+},
+chart: {
+    renderTo: 'statusChart',
+    plotBackgroundColor: null,
+    plotBorderWidth: null,
+    plotShadow: false,
+    type: 'pie'
+},
+
+tooltip: {
+    enabled: true,
+    useHTML: true,
+    style: {
+        padding: '6px',
+        fontSize: '14px'
+    },
+    backgroundColor: {
+        linearGradient: {
+            x1: 0,
+            y1: 0,
+            x2: 0,
+            y2: 1
+        },
+        stops: [
+            [0, 'rgba(255, 255, 255, 0.78)'],
+            [0.5, 'rgba(235, 235, 235, 0.76)'],
+            [1, 'rgba(244, 252, 255, 0.74)']
+        ]
+    },
+    hideDelay: 40,
+    pointFormat: '<b>{point.y}</b><br /><b>{point.percentage:.1f}%</b>'
+},
+
+accessibility: {
+    point: {
+        valueSuffix: '%'
+    }
+},
+plotOptions: {
+    series: {
+        states: {
+            inactive: {
+                opacity: 0.85
+            }
+        }
+    },
+    pie: {
+        size: "95%",
+        allowPointSelect: true,
+        animation: false,
+        cursor: 'pointer',
+        dataLabels: {
+            enabled: true,
+            formatter: function() {
+              if (this.y > 0) {
+                return this.point.name + ': ' + this.point.y
+              }
+            }
+        },
+        states: {
+            hover: {
+                enabled: true
+            }
+        },
+        showInLegend: true
+    }
+},
+
+series: [{
+name: 'Series 1',
+colorByPoint: true,
+data: [
+
+{
+name: 'Passed',
+y: 5,
+color: '#84d474'
+},
+
+{
+name: 'Untested',
+y: 0,
+color: '#eaeaea'
+},
+
+{
+name: 'Skipped',
+y: 0,
+color: '#efd8b4'
+},
+
+{
+name: 'Failed',
+y: 0,
+color: '#f17476'
+},
+
+            ]
+                }]
+            });
+            </script>
+            
+    <p>Report generated on 07-Jan-2025 at 14:35:50 by <a href="https://github.com/seleniumbase/SeleniumBase">SeleniumBase</a> and <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
         v4.0.2</p>
     <div id="environment-header">
       <h2>Environment</h2>
@@ -61,7 +244,7 @@
         <h2>Summary</h2>
         <div class="additional-summary prefix">
         </div>
-        <p class="run-count">5 tests ran in 103.73 seconds.</p>
+        <p class="run-count">5 tests ran in 91.11 seconds.</p>
         <p class="filter">(Un)check the boxes to filter the results.</p>
         <div class="summary__reload">
           <div class="summary__reload__button hidden" onclick="location.reload()">
@@ -71,10 +254,10 @@
         <div class="summary__spacer"></div>
         <div class="controls">
           <div class="filters">
-            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" />
-            <span class="failed">2 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" disabled/>
+            <span class="failed">0 Failed,</span>
             <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" />
-            <span class="passed">3 Passed,</span>
+            <span class="passed">5 Passed,</span>
             <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled/>
             <span class="skipped">0 Skipped,</span>
             <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled/>
@@ -108,7 +291,7 @@
     </table>
   </body>
   <footer>
-    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.13.0&#34;, &#34;Platform&#34;: &#34;Windows-10-10.0.19045-SP0&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;8.3.4&#34;, &#34;pluggy&#34;: &#34;1.5.0&#34;}, &#34;Plugins&#34;: {&#34;html&#34;: &#34;4.0.2&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;, &#34;ordering&#34;: &#34;0.6&#34;, &#34;rerunfailures&#34;: &#34;15.0&#34;, &#34;xdist&#34;: &#34;3.6.1&#34;, &#34;seleniumbase&#34;: &#34;4.33.12&#34;}, &#34;JAVA_HOME&#34;: &#34;C:\\Program Files\\Java\\jdk-17&#34;}, &#34;tests&#34;: {&#34;authentication/forgot_password/forgot_password_navigation_test.py::ForgotPassswordNavigationTest::test_swag_labs&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;authentication/forgot_password/forgot_password_navigation_test.py::ForgotPassswordNavigationTest::test_swag_labs&#34;, &#34;duration&#34;: &#34;17.28&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;authentication/forgot_password/forgot_password_navigation_test.py::ForgotPassswordNavigationTest::test_swag_labs&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;17.28&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;authentication/forgot_password/forgot_password_success_test.py::ForgotPasswordTest::test_swag_labs&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;authentication/forgot_password/forgot_password_success_test.py::ForgotPasswordTest::test_swag_labs&#34;, &#34;duration&#34;: &#34;26.85&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;authentication/forgot_password/forgot_password_success_test.py::ForgotPasswordTest::test_swag_labs&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;26.85&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;authentication/forgot_password/forgot_password_test_bad_email_test.py::ForgotPasswordTest::test_swag_labs&#34;: [{&#34;extras&#34;: [{&#34;name&#34;: &#34;URL&#34;, &#34;format&#34;: &#34;url&#34;, &#34;format_type&#34;: &#34;url&#34;, &#34;content&#34;: &#34;https://admin-equip-bid-test.aeritech.com/forgot-password&#34;, &#34;mime_type&#34;: null, &#34;extension&#34;: null}, {&#34;name&#34;: &#34;Screenshot&#34;, &#34;format&#34;: &#34;image&#34;, &#34;format_type&#34;: &#34;image&#34;, &#34;content&#34;: &#34;assets\\authentication_forgot_password_forgot_password_test_bad_email_test.py__ForgotPasswordTest__test_swag_labs_1_0.png&#34;, &#34;mime_type&#34;: &#34;image/png&#34;, &#34;extension&#34;: &#34;png&#34;}], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;authentication/forgot_password/forgot_password_test_bad_email_test.py::ForgotPasswordTest::test_swag_labs&#34;, &#34;duration&#34;: &#34;23.02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;authentication/forgot_password/forgot_password_test_bad_email_test.py::ForgotPasswordTest::test_swag_labs&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;23.02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;a target=\&#34;_blank\&#34; href=\&#34;https://admin-equip-bid-test.aeritech.com/forgot-password\&#34; class=\&#34;col-links__extra url\&#34;&gt;URL&lt;/a&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;forgot_password_test_bad_email_test.ForgotPasswordTest testMethod=test_swag_labs&amp;gt;\n\n    def test_swag_labs(self):\n&amp;gt;       self.openPage()\n\nauthentication\\forgot_password\\forgot_password_test_bad_email_test.py:10: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nauthentication\\forgot_password\\forgot_password_test_bad_email_test.py:22: in openPage\n    self.checkForApiResponse()\nauthentication\\forgot_password\\forgot_password_test_bad_email_test.py:54: in checkForApiResponse\n    self.fail(message)\nC:\\Users\\Rishan\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\seleniumbase\\fixtures\\base_case.py:8661: in fail\n    super().fail(msg)\nE   AssertionError: Password Reset Request Success with message: We have sent you password reset link, Please check your email\n&#34;}], &#34;authentication/forgot_password/forgot_password_validation_test.py::ForgotPasswordTest::test_swag_labs&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;authentication/forgot_password/forgot_password_validation_test.py::ForgotPasswordTest::test_swag_labs&#34;, &#34;duration&#34;: &#34;24.64&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;authentication/forgot_password/forgot_password_validation_test.py::ForgotPasswordTest::test_swag_labs&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;24.64&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;authentication/login/login_test.py::LoginTest::test_swag_labs&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;authentication/login/login_test.py::LoginTest::test_swag_labs&#34;, &#34;duration&#34;: &#34;10.10&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;authentication/login/login_test.py::LoginTest::test_swag_labs&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;10.10&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;login_test.LoginTest testMethod=test_swag_labs&amp;gt;, selector = &#39;[name=\&#34;email\&#34;]&#39;, text = &#39;tech@aeritech.com&#39;, by = &#39;css selector&#39;, timeout = 10, retry = False\n\n    def update_text(\n        self, selector, text, by=\&#34;css selector\&#34;, timeout=None, retry=False\n    ):\n        \&#34;\&#34;\&#34;This method updates an element&#39;s text field with new text.\n        Has multiple parts:\n        * Waits for the element to be visible.\n        * Waits for the element to be interactive.\n        * Clears the text field.\n        * Types in the new text.\n        * Hits Enter/Submit (if the text ends in \&#34;\\n\&#34;).\n        @Params\n        selector - The selector of the text field.\n        text - The new text to type into the text field.\n        by - The type of selector to search by. (Default: \&#34;css selector\&#34;)\n        timeout - How long to wait for the selector to be visible.\n        retry - If True, use JS if the Selenium text update fails.\&#34;\&#34;\&#34;\n        self.__check_scope()\n        if not timeout:\n            timeout = settings.LARGE_TIMEOUT\n        if self.timeout_multiplier and timeout == settings.LARGE_TIMEOUT:\n            timeout = self.__get_new_timeout(timeout)\n        selector, by = self.__recalculate_selector(selector, by)\n        if self.__is_cdp_swap_needed():\n            self.cdp.type(selector, text, timeout=timeout)\n            return\n        if self.__is_shadow_selector(selector):\n            self.__shadow_type(selector, text, timeout)\n            return\n        element = self.wait_for_element_clickable(\n            selector, by=by, timeout=timeout\n        )\n        self.__demo_mode_highlight_if_active(selector, by)\n        if not self.demo_mode and not self.slow_mode:\n            self.__scroll_to_element(element, selector, by)\n            if self.__needs_minimum_wait():\n                time.sleep(0.04)\n        try:\n            element.clear()  # May need https://stackoverflow.com/a/50691625\n            backspaces = Keys.BACK_SPACE * 42  # Is the answer to everything\n            element.send_keys(backspaces)  # In case autocomplete keeps text\n        except (Stale_Exception, ENI_Exception):\n            self.wait_for_ready_state_complete()\n            time.sleep(0.16)\n            element = self.wait_for_element_clickable(\n                selector, by=by, timeout=timeout\n            )\n            with suppress(Exception):\n                element.clear()\n        except Exception:\n            pass  # Clearing the text field first might not be necessary\n        self.__demo_mode_pause_if_active(tiny=True)\n        pre_action_url = None\n        if self.demo_mode:\n            with suppress(Exception):\n                pre_action_url = self.driver.current_url\n        text = self.__get_type_checked_text(text)\n        try:\n            if not text.endswith(\&#34;\\n\&#34;):\n&amp;gt;               element.send_keys(text)\n\nC:\\Users\\Rishan\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\seleniumbase\\fixtures\\base_case.py:923: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nC:\\Users\\Rishan\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py:231: in send_keys\n    self._execute(\nC:\\Users\\Rishan\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py:395: in _execute\n    return self._parent.execute(command, params)\nC:\\Users\\Rishan\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:384: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = &amp;lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000001A2969CD0F0&amp;gt;\nresponse = {&#39;status&#39;: 404, &#39;value&#39;: &#39;{\&#34;value\&#34;:{\&#34;error\&#34;:\&#34;no such window\&#34;,\&#34;message\&#34;:\&#34;no such window: target window already closed\\\\...07FF65334ED49]\\\\n\\\\tBaseThreadInitThunk [0x00007FF9B9F87374+20]\\\\n\\\\tRtlUserThreadStart [0x00007FF9BB0BCC91+33]\\\\n\&#34;}}&#39;}\n\n    def check_response(self, response: Dict[str, Any]) -&amp;gt; None:\n        \&#34;\&#34;\&#34;Checks that a JSON response from the WebDriver does not have an\n        error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \&#34;\&#34;\&#34;\n        status = response.get(\&#34;status\&#34;, None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\&#34;message\&#34;, \&#34;\&#34;)\n        screen: str = response.get(\&#34;screen\&#34;, \&#34;\&#34;)\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get(\&#34;value\&#34;, None)\n            if value_json and isinstance(value_json, str):\n                import json\n    \n                try:\n                    value = json.loads(value_json)\n                    if len(value) == 1:\n                        value = value[\&#34;value\&#34;]\n                    status = value.get(\&#34;error\&#34;, None)\n                    if not status:\n                        status = value.get(\&#34;status\&#34;, ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\&#34;value\&#34;) or value.get(\&#34;message\&#34;)\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get(\&#34;message\&#34;)\n                    else:\n                        message = value.get(\&#34;message\&#34;, None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        e = ErrorCode()\n        error_codes = [item for item in dir(e) if not item.startswith(\&#34;__\&#34;)]\n        for error_code in error_codes:\n            error_info = getattr(ErrorCode, error_code)\n            if isinstance(error_info, list) and status in error_info:\n                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)\n                break\n        else:\n            exception_class = WebDriverException\n    \n        if not value:\n            value = response[\&#34;value\&#34;]\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \&#34;\&#34; and \&#34;message\&#34; in value:\n            message = value[\&#34;message\&#34;]\n    \n        screen = None  # type: ignore[assignment]\n        if \&#34;screen\&#34; in value:\n            screen = value[\&#34;screen\&#34;]\n    \n        stacktrace = None\n        st_value = value.get(\&#34;stackTrace\&#34;) or value.get(\&#34;stacktrace\&#34;)\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split(\&#34;\\n\&#34;)\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = frame.get(\&#34;lineNumber\&#34;, \&#34;\&#34;)\n                        file = frame.get(\&#34;fileName\&#34;, \&#34;&amp;lt;anonymous&amp;gt;\&#34;)\n                        if line:\n                            file = f\&#34;{file}:{line}\&#34;\n                        meth = frame.get(\&#34;methodName\&#34;, \&#34;&amp;lt;anonymous&amp;gt;\&#34;)\n                        if \&#34;className\&#34; in frame:\n                            meth = f\&#34;{frame[&#39;className&#39;]}.{meth}\&#34;\n                        msg = \&#34;    at %s (%s)\&#34;\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if \&#34;data\&#34; in value:\n                alert_text = value[\&#34;data\&#34;].get(\&#34;text\&#34;)\n            elif \&#34;alert\&#34; in value:\n                alert_text = value[\&#34;alert\&#34;].get(\&#34;text\&#34;)\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n&amp;gt;       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed\nE       from unknown error: web view not found\nE         (Session info: chrome=131.0.6778.205)\nE       Stacktrace:\nE       \tGetHandleVerifier [0x00007FF6533EFB05+28789]\nE       \t(No symbol) [0x00007FF6533586E0]\nE       \t(No symbol) [0x00007FF6531F592A]\nE       \t(No symbol) [0x00007FF6531CF505]\nE       \t(No symbol) [0x00007FF653276477]\nE       \t(No symbol) [0x00007FF65328EF42]\nE       \t(No symbol) [0x00007FF65326F1E3]\nE       \t(No symbol) [0x00007FF65323A938]\nE       \t(No symbol) [0x00007FF65323BAA1]\nE       \tGetHandleVerifier [0x00007FF65372933D+3410093]\nE       \tGetHandleVerifier [0x00007FF65373E7DD+3497293]\nE       \tGetHandleVerifier [0x00007FF653732A73+3448803]\nE       \tGetHandleVerifier [0x00007FF6534B7BBB+848171]\nE       \t(No symbol) [0x00007FF653363C3F]\nE       \t(No symbol) [0x00007FF65335F6E4]\nE       \t(No symbol) [0x00007FF65335F87D]\nE       \t(No symbol) [0x00007FF65334ED49]\nE       \tBaseThreadInitThunk [0x00007FF9B9F87374+20]\nE       \tRtlUserThreadStart [0x00007FF9BB0BCC91+33]\n\nC:\\Users\\Rishan\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py:232: NoSuchWindowException\n\nDuring handling of the above exception, another exception occurred:\n\nself = &amp;lt;login_test.LoginTest testMethod=test_swag_labs&amp;gt;\n\n    def test_swag_labs(self):\n&amp;gt;       self.openPage()\n\nauthentication\\login\\login_test.py:9: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nauthentication\\login\\login_test.py:17: in openPage\n    self.fillBidderCredentials()\nauthentication\\login\\login_test.py:61: in fillBidderCredentials\n    self.loginWithCredentials(\&#34;tech@aeritech.com\&#34;,\&#34;Test123$$\&#34;)\nauthentication\\login\\login_test.py:56: in loginWithCredentials\n    self.type(&#39;[name=\&#34;email\&#34;]&#39;, email)\nC:\\Users\\Rishan\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\seleniumbase\\fixtures\\base_case.py:1099: in type\n    self.update_text(selector, text, by=by, timeout=timeout, retry=retry)\nC:\\Users\\Rishan\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\seleniumbase\\fixtures\\base_case.py:947: in update_text\n    self.wait_for_ready_state_complete()\nC:\\Users\\Rishan\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\seleniumbase\\fixtures\\base_case.py:4705: in wait_for_ready_state_complete\n    self._check_browser()\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = &amp;lt;login_test.LoginTest testMethod=test_swag_labs&amp;gt;\n\n    def _check_browser(self):\n        \&#34;\&#34;\&#34;This method raises an exception if the active window is closed.\n        (This provides a much cleaner exception message in this situation.)\&#34;\&#34;\&#34;\n        page_actions._reconnect_if_disconnected(self.driver)\n        active_window = None\n        with suppress(Exception):\n            active_window = self.driver.current_window_handle  # Fails if None\n        if not active_window:\n&amp;gt;           raise NoSuchWindowException(\&#34;Active window was already closed!\&#34;)\nE           selenium.common.exceptions.NoSuchWindowException: Message: Active window was already closed!\n\nC:\\Users\\Rishan\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\seleniumbase\\fixtures\\base_case.py:9195: NoSuchWindowException\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;report.html&#34;}"></div>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.13.0&#34;, &#34;Platform&#34;: &#34;Windows-10-10.0.19045-SP0&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;8.3.4&#34;, &#34;pluggy&#34;: &#34;1.5.0&#34;}, &#34;Plugins&#34;: {&#34;html&#34;: &#34;4.0.2&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;, &#34;ordering&#34;: &#34;0.6&#34;, &#34;rerunfailures&#34;: &#34;15.0&#34;, &#34;xdist&#34;: &#34;3.6.1&#34;, &#34;seleniumbase&#34;: &#34;4.33.12&#34;}, &#34;JAVA_HOME&#34;: &#34;C:\\Program Files\\Java\\jdk-17&#34;}, &#34;tests&#34;: {&#34;authentication/forgot_password/forgot_password_navigation_test.py::ForgotPassswordNavigationTest::test_swag_labs&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;authentication/forgot_password/forgot_password_navigation_test.py::ForgotPassswordNavigationTest::test_swag_labs&#34;, &#34;duration&#34;: &#34;14.93&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;authentication/forgot_password/forgot_password_navigation_test.py::ForgotPassswordNavigationTest::test_swag_labs&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;14.93&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;authentication/forgot_password/forgot_password_success_test.py::ForgotPasswordTest::test_swag_labs&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;authentication/forgot_password/forgot_password_success_test.py::ForgotPasswordTest::test_swag_labs&#34;, &#34;duration&#34;: &#34;20.85&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;authentication/forgot_password/forgot_password_success_test.py::ForgotPasswordTest::test_swag_labs&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;20.85&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;authentication/forgot_password/forgot_password_test_bad_email_test.py::ForgotPasswordTest::test_swag_labs&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;authentication/forgot_password/forgot_password_test_bad_email_test.py::ForgotPasswordTest::test_swag_labs&#34;, &#34;duration&#34;: &#34;19.29&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;authentication/forgot_password/forgot_password_test_bad_email_test.py::ForgotPasswordTest::test_swag_labs&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;19.29&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;authentication/forgot_password/forgot_password_validation_test.py::ForgotPasswordTest::test_swag_labs&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;authentication/forgot_password/forgot_password_validation_test.py::ForgotPasswordTest::test_swag_labs&#34;, &#34;duration&#34;: &#34;17.70&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;authentication/forgot_password/forgot_password_validation_test.py::ForgotPasswordTest::test_swag_labs&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;17.70&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;authentication/login/login_test.py::LoginTest::test_swag_labs&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;authentication/login/login_test.py::LoginTest::test_swag_labs&#34;, &#34;duration&#34;: &#34;18.17&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;authentication/login/login_test.py::LoginTest::test_swag_labs&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;18.17&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;report.html&#34;}"></div>
     <script>
       (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
@@ -767,4 +950,4 @@ module.exports = {
 },{}]},{},[4]);
     </script>
   </footer>
-</html>
+</html><p></p><div><b>Status:</b> Test Run Complete: <b>Success!</b> (All tests passed)</div><p></p>

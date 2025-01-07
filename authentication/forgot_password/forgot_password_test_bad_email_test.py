@@ -60,7 +60,7 @@ class ForgotPasswordTest(BaseCase):
         self._print(f"{email} is filled to input area")
             
     def fillBadEmail(self):
-        self.addEmailToInputField("tech@aeritech.com")
+        self.addEmailToInputField("one@one.com")
 
 
         
