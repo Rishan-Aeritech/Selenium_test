@@ -1,0 +1,26 @@
+authentication/forgot_password_test.py::ForgotPasswordTest::test_swag_labs
+--------------------------------------------------------------------
+Last Page: https://admin-equip-bid-test.aeritech.com/forgot-password
+ Duration: 19.27s
+  Browser: Chrome 131.0.6778.205
+   Driver: chromedriver 131.0.6778.204
+Timestamp: 1736177658  (Unix Timestamp)
+     Date: Monday, 6 January 2025
+     Time: 9:19:18 PM  (Nepal Standard Time, UTC+05:750)
+--------------------------------------------------------------------
+Traceback:
+  File "D:\Extra\python\seleniumTest\authentication\forgot_password_test.py", line 10, in test_swag_labs
+    self.openPage()
+    ~~~~~~~~~~~~~^^
+  File "D:\Extra\python\seleniumTest\authentication\forgot_password_test.py", line 22, in openPage
+    self.checkForApiResponse()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Extra\python\seleniumTest\authentication\forgot_password_test.py", line 49, in checkForApiResponse
+    self.fail(message)
+    ~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Rishan\AppData\Local\Programs\Python\Python313\Lib\site-packages\seleniumbase\fixtures\base_case.py", line 8661, in fail
+    super().fail(msg)
+    ~~~~~~~~~~~~^^^^^
+  File "C:\Users\Rishan\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+Exception: Password Reset Request Failed with message: Error Confirming Email, Please enter correct email associated with your account

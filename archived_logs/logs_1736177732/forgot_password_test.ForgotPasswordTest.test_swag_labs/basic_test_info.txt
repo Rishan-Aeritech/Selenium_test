@@ -1,0 +1,26 @@
+authentication/forgot_password_test.py::ForgotPasswordTest::test_swag_labs
+--------------------------------------------------------------------
+Last Page: https://admin-equip-bid-test.aeritech.com/forgot-password
+ Duration: 19.08s
+  Browser: Chrome 131.0.6778.205
+   Driver: chromedriver 131.0.6778.204
+Timestamp: 1736177730  (Unix Timestamp)
+     Date: Monday, 6 January 2025
+     Time: 9:20:30 PM  (Nepal Standard Time, UTC+05:750)
+--------------------------------------------------------------------
+Traceback:
+  File "D:\Extra\python\seleniumTest\authentication\forgot_password_test.py", line 10, in test_swag_labs
+    self.openPage()
+    ~~~~~~~~~~~~~^^
+  File "D:\Extra\python\seleniumTest\authentication\forgot_password_test.py", line 19, in openPage
+    self.checkForValidationError()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Extra\python\seleniumTest\authentication\forgot_password_test.py", line 41, in checkForValidationError
+    self.fail(message)
+    ~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Rishan\AppData\Local\Programs\Python\Python313\Lib\site-packages\seleniumbase\fixtures\base_case.py", line 8661, in fail
+    super().fail(msg)
+    ~~~~~~~~~~~~^^^^^
+  File "C:\Users\Rishan\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+Exception: Cannot Perform due to Validation Error on Fields: This field is required

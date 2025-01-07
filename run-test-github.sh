@@ -1,0 +1,1 @@
+pytest --html=report.html --archive-logs --recorder --headless --browser=chrome -v -s --junit-xml=junit/test-results.xml

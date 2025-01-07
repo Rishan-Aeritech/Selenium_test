@@ -1,0 +1,40 @@
+authentication/forgot_password_test.py::ForgotPasswordTest::test_swag_labs
+--------------------------------------------------------------------
+Last Page: data:,
+ Duration: 0.21s
+  Browser: Chrome 131.0.6778.205
+   Driver: chromedriver 131.0.6778.204
+Timestamp: 1736161110  (Unix Timestamp)
+     Date: Monday, 6 January 2025
+     Time: 4:43:30 PM  (Nepal Standard Time, UTC+05:750)
+--------------------------------------------------------------------
+Traceback:
+  File "D:\Extra\python\seleniumTest\authentication\forgot_password_test.py", line 10, in test_swag_labs
+    self.openPage()
+    ~~~~~~~~~~~~~^^
+  File "D:\Extra\python\seleniumTest\authentication\forgot_password_test.py", line 15, in openPage
+    test.test_swag_labs()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Extra\python\seleniumTest\authentication\forgot_password_navigation_test.py", line 9, in test_swag_labs
+    self.openPage()
+    ~~~~~~~~~~~~~^^
+  File "D:\Extra\python\seleniumTest\authentication\forgot_password_navigation_test.py", line 13, in openPage
+    self.open(self.baseUrl)
+    ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Rishan\AppData\Local\Programs\Python\Python313\Lib\site-packages\seleniumbase\fixtures\base_case.py", line 225, in open
+    self.__check_scope()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Rishan\AppData\Local\Programs\Python\Python313\Lib\site-packages\seleniumbase\fixtures\base_case.py", line 11001, in __check_scope
+    raise OutOfScopeException(message)
+Exception: 
+ It looks like you are trying to call a SeleniumBase method
+ from outside the scope of your test class's `self` object,
+ which is initialized by calling BaseCase's setUp() method.
+ The `self` object is where all test variables are defined.
+ If you created a custom setUp() method (that overrided the
+ the default one), make sure to call super().setUp() in it.
+ When using page objects, be sure to pass the `self` object
+ from your test class into your page object methods so that
+ they can call BaseCase class methods with all the required
+ variables, which are initialized during the setUp() method
+ that runs automatically before all tests called by pytest.
