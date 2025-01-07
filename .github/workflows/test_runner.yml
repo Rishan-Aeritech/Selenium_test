@@ -49,4 +49,4 @@ jobs:
         nosetests nothing2.py
     - name: Run Test for all test files 
       run: |
-        pytest --html=report.html --dashboard --archive-logs --recorder --headless --browser=chrome -v -s --junit-xml=junit/test-results.xml
+        pytest ./recordings --html=report.html --dashboard --archive-logs --recorder --headless --browser=chrome -v -s --junit-xml=junit/test-results.xml
