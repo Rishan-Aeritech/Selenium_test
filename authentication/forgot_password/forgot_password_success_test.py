@@ -1,5 +1,5 @@
 import time; 
-from forgot_password_navigation_test import  navigationTest
+from authentication.forgot_password.forgot_password_navigation_test import  navigationTest
 from constant.Routes import *
 from seleniumbase import BaseCase
 BaseCase.main(__name__, __file__)
@@ -53,18 +53,15 @@ class ForgotPasswordTest(BaseCase):
         if(isExists):
             message=f"Password Reset Request Success with message: {self.get_text(selector)}"
             self._print(message)
+        else:
+            self._print(message)
+            self.fail(message)
             
         
     def addEmailToInputField(self,email):
         self.type('[name="email"]', email)
         self._print(f"{email} is filled to input area")
             
-    def fillBadEmail(self):
-        self.addEmailToInputField("one@aeritech.com")
-    
-    def fillEmptyEmail(self):
-        self.addEmailToInputField("")
-        
     def fillValidEmail(self):
         self.addEmailToInputField("tech@aeritech.com")
 

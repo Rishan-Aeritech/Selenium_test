@@ -1,3 +1,0 @@
-[console_scripts]
-sbase = seleniumbase.cli:main
-seleniumbase = seleniumbase.cli:main
