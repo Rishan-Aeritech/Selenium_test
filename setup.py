@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="seleniumbase",
+    name="testproj",
     version="0.1.0",  # Set dynamically if possible
     description="A powerful web automation and testing framework",
     long_description=open("README.md").read(),
@@ -9,15 +9,6 @@ setup(
     author="Dynamic Author",  # Replace if not dynamic
     url="https://github.com/seleniumbase/SeleniumBase",
     project_urls={
-        "Homepage": "https://github.com/seleniumbase/SeleniumBase",
-        "Changelog": "https://github.com/seleniumbase/SeleniumBase/releases",
-        "Download": "https://pypi.org/project/seleniumbase/#files",
-        "Blog": "https://seleniumbase.com/",
-        "Discord": "https://discord.gg/EdhQTn3EyE",
-        "PyPI": "https://pypi.org/project/seleniumbase/",
-        "Source": "https://github.com/seleniumbase/SeleniumBase",
-        "Repository": "https://github.com/seleniumbase/SeleniumBase",
-        "Documentation": "https://seleniumbase.io/",
     },
     packages=find_packages(include=[
         "seleniumbase",

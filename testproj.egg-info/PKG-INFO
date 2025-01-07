@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: testproj
+Version: 0.1.0
+Summary: A powerful web automation and testing framework
+Home-page: https://github.com/seleniumbase/SeleniumBase
+Author: Dynamic Author
+Keywords: automation,testing,selenium,pytest
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools>=70.2.0
+Requires-Dist: wheel>=0.44.0
+
+# Selenium_test

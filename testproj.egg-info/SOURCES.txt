@@ -1,0 +1,8 @@
+README.md
+setup.py
+testproj.egg-info/PKG-INFO
+testproj.egg-info/SOURCES.txt
+testproj.egg-info/dependency_links.txt
+testproj.egg-info/entry_points.txt
+testproj.egg-info/requires.txt
+testproj.egg-info/top_level.txt
