@@ -51,6 +51,7 @@ class ForgotPasswordTest(BaseCase):
         isExists = self.is_element_present(selector)
         if(isExists):
             message=f"Password Reset Request Success with message: {self.get_text(selector)}"
+            self._print("Bad Email was entered but api call responded with success")
             self.fail(message)
             
         

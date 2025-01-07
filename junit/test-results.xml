@@ -1,1 +1,240 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="0" time="10.121" timestamp="2025-01-07T14:18:57.424460+05:45" hostname="Rishan"><testcase time="0.000" /></testsuite></testsuites>
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="5" time="103.529" timestamp="2025-01-07T14:22:22.129683+05:45" hostname="Rishan"><testcase classname="authentication.forgot_password.forgot_password_navigation_test.ForgotPassswordNavigationTest" name="test_swag_labs" file="authentication\forgot_password\forgot_password_navigation_test.py" line="13" time="17.277" /><testcase classname="authentication.forgot_password.forgot_password_success_test.ForgotPasswordTest" name="test_swag_labs" file="authentication\forgot_password\forgot_password_success_test.py" line="9" time="26.852" /><testcase classname="authentication.forgot_password.forgot_password_test_bad_email_test.ForgotPasswordTest" name="test_swag_labs" file="authentication\forgot_password\forgot_password_test_bad_email_test.py" line="8" time="23.020"><failure message="AssertionError: Password Reset Request Success with message: We have sent you password reset link, Please check your email">self = &lt;forgot_password_test_bad_email_test.ForgotPasswordTest testMethod=test_swag_labs&gt;
+
+    def test_swag_labs(self):
+&gt;       self.openPage()
+
+authentication\forgot_password\forgot_password_test_bad_email_test.py:10: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+authentication\forgot_password\forgot_password_test_bad_email_test.py:22: in openPage
+    self.checkForApiResponse()
+authentication\forgot_password\forgot_password_test_bad_email_test.py:54: in checkForApiResponse
+    self.fail(message)
+C:\Users\Rishan\AppData\Local\Programs\Python\Python313\Lib\site-packages\seleniumbase\fixtures\base_case.py:8661: in fail
+    super().fail(msg)
+E   AssertionError: Password Reset Request Success with message: We have sent you password reset link, Please check your email</failure></testcase><testcase classname="authentication.forgot_password.forgot_password_validation_test.ForgotPasswordTest" name="test_swag_labs" file="authentication\forgot_password\forgot_password_validation_test.py" line="8" time="24.640" /><testcase classname="authentication.login.login_test.LoginTest" name="test_swag_labs" file="authentication\login\login_test.py" line="7" time="10.099"><failure message="selenium.common.exceptions.NoSuchWindowException: Message: Active window was already closed!">self = &lt;login_test.LoginTest testMethod=test_swag_labs&gt;, selector = '[name="email"]', text = 'tech@aeritech.com', by = 'css selector', timeout = 10, retry = False
+
+    def update_text(
+        self, selector, text, by="css selector", timeout=None, retry=False
+    ):
+        """This method updates an element's text field with new text.
+        Has multiple parts:
+        * Waits for the element to be visible.
+        * Waits for the element to be interactive.
+        * Clears the text field.
+        * Types in the new text.
+        * Hits Enter/Submit (if the text ends in "\n").
+        @Params
+        selector - The selector of the text field.
+        text - The new text to type into the text field.
+        by - The type of selector to search by. (Default: "css selector")
+        timeout - How long to wait for the selector to be visible.
+        retry - If True, use JS if the Selenium text update fails."""
+        self.__check_scope()
+        if not timeout:
+            timeout = settings.LARGE_TIMEOUT
+        if self.timeout_multiplier and timeout == settings.LARGE_TIMEOUT:
+            timeout = self.__get_new_timeout(timeout)
+        selector, by = self.__recalculate_selector(selector, by)
+        if self.__is_cdp_swap_needed():
+            self.cdp.type(selector, text, timeout=timeout)
+            return
+        if self.__is_shadow_selector(selector):
+            self.__shadow_type(selector, text, timeout)
+            return
+        element = self.wait_for_element_clickable(
+            selector, by=by, timeout=timeout
+        )
+        self.__demo_mode_highlight_if_active(selector, by)
+        if not self.demo_mode and not self.slow_mode:
+            self.__scroll_to_element(element, selector, by)
+            if self.__needs_minimum_wait():
+                time.sleep(0.04)
+        try:
+            element.clear()  # May need https://stackoverflow.com/a/50691625
+            backspaces = Keys.BACK_SPACE * 42  # Is the answer to everything
+            element.send_keys(backspaces)  # In case autocomplete keeps text
+        except (Stale_Exception, ENI_Exception):
+            self.wait_for_ready_state_complete()
+            time.sleep(0.16)
+            element = self.wait_for_element_clickable(
+                selector, by=by, timeout=timeout
+            )
+            with suppress(Exception):
+                element.clear()
+        except Exception:
+            pass  # Clearing the text field first might not be necessary
+        self.__demo_mode_pause_if_active(tiny=True)
+        pre_action_url = None
+        if self.demo_mode:
+            with suppress(Exception):
+                pre_action_url = self.driver.current_url
+        text = self.__get_type_checked_text(text)
+        try:
+            if not text.endswith("\n"):
+&gt;               element.send_keys(text)
+
+C:\Users\Rishan\AppData\Local\Programs\Python\Python313\Lib\site-packages\seleniumbase\fixtures\base_case.py:923: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+C:\Users\Rishan\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py:231: in send_keys
+    self._execute(
+C:\Users\Rishan\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py:395: in _execute
+    return self._parent.execute(command, params)
+C:\Users\Rishan\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py:384: in execute
+    self.error_handler.check_response(response)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000001A2969CD0F0&gt;
+response = {'status': 404, 'value': '{"value":{"error":"no such window","message":"no such window: target window already closed\\...07FF65334ED49]\\n\\tBaseThreadInitThunk [0x00007FF9B9F87374+20]\\n\\tRtlUserThreadStart [0x00007FF9BB0BCC91+33]\\n"}}'}
+
+    def check_response(self, response: Dict[str, Any]) -&gt; None:
+        """Checks that a JSON response from the WebDriver does not have an
+        error.
+    
+        :Args:
+         - response - The JSON response from the WebDriver server as a dictionary
+           object.
+    
+        :Raises: If the response contains an error message.
+        """
+        status = response.get("status", None)
+        if not status or status == ErrorCode.SUCCESS:
+            return
+        value = None
+        message = response.get("message", "")
+        screen: str = response.get("screen", "")
+        stacktrace = None
+        if isinstance(status, int):
+            value_json = response.get("value", None)
+            if value_json and isinstance(value_json, str):
+                import json
+    
+                try:
+                    value = json.loads(value_json)
+                    if len(value) == 1:
+                        value = value["value"]
+                    status = value.get("error", None)
+                    if not status:
+                        status = value.get("status", ErrorCode.UNKNOWN_ERROR)
+                        message = value.get("value") or value.get("message")
+                        if not isinstance(message, str):
+                            value = message
+                            message = message.get("message")
+                    else:
+                        message = value.get("message", None)
+                except ValueError:
+                    pass
+    
+        exception_class: Type[WebDriverException]
+        e = ErrorCode()
+        error_codes = [item for item in dir(e) if not item.startswith("__")]
+        for error_code in error_codes:
+            error_info = getattr(ErrorCode, error_code)
+            if isinstance(error_info, list) and status in error_info:
+                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)
+                break
+        else:
+            exception_class = WebDriverException
+    
+        if not value:
+            value = response["value"]
+        if isinstance(value, str):
+            raise exception_class(value)
+        if message == "" and "message" in value:
+            message = value["message"]
+    
+        screen = None  # type: ignore[assignment]
+        if "screen" in value:
+            screen = value["screen"]
+    
+        stacktrace = None
+        st_value = value.get("stackTrace") or value.get("stacktrace")
+        if st_value:
+            if isinstance(st_value, str):
+                stacktrace = st_value.split("\n")
+            else:
+                stacktrace = []
+                try:
+                    for frame in st_value:
+                        line = frame.get("lineNumber", "")
+                        file = frame.get("fileName", "&lt;anonymous&gt;")
+                        if line:
+                            file = f"{file}:{line}"
+                        meth = frame.get("methodName", "&lt;anonymous&gt;")
+                        if "className" in frame:
+                            meth = f"{frame['className']}.{meth}"
+                        msg = "    at %s (%s)"
+                        msg = msg % (meth, file)
+                        stacktrace.append(msg)
+                except TypeError:
+                    pass
+        if exception_class == UnexpectedAlertPresentException:
+            alert_text = None
+            if "data" in value:
+                alert_text = value["data"].get("text")
+            elif "alert" in value:
+                alert_text = value["alert"].get("text")
+            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here
+&gt;       raise exception_class(message, screen, stacktrace)
+E       selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+E       from unknown error: web view not found
+E         (Session info: chrome=131.0.6778.205)
+E       Stacktrace:
+E       	GetHandleVerifier [0x00007FF6533EFB05+28789]
+E       	(No symbol) [0x00007FF6533586E0]
+E       	(No symbol) [0x00007FF6531F592A]
+E       	(No symbol) [0x00007FF6531CF505]
+E       	(No symbol) [0x00007FF653276477]
+E       	(No symbol) [0x00007FF65328EF42]
+E       	(No symbol) [0x00007FF65326F1E3]
+E       	(No symbol) [0x00007FF65323A938]
+E       	(No symbol) [0x00007FF65323BAA1]
+E       	GetHandleVerifier [0x00007FF65372933D+3410093]
+E       	GetHandleVerifier [0x00007FF65373E7DD+3497293]
+E       	GetHandleVerifier [0x00007FF653732A73+3448803]
+E       	GetHandleVerifier [0x00007FF6534B7BBB+848171]
+E       	(No symbol) [0x00007FF653363C3F]
+E       	(No symbol) [0x00007FF65335F6E4]
+E       	(No symbol) [0x00007FF65335F87D]
+E       	(No symbol) [0x00007FF65334ED49]
+E       	BaseThreadInitThunk [0x00007FF9B9F87374+20]
+E       	RtlUserThreadStart [0x00007FF9BB0BCC91+33]
+
+C:\Users\Rishan\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: NoSuchWindowException
+
+During handling of the above exception, another exception occurred:
+
+self = &lt;login_test.LoginTest testMethod=test_swag_labs&gt;
+
+    def test_swag_labs(self):
+&gt;       self.openPage()
+
+authentication\login\login_test.py:9: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+authentication\login\login_test.py:17: in openPage
+    self.fillBidderCredentials()
+authentication\login\login_test.py:61: in fillBidderCredentials
+    self.loginWithCredentials("tech@aeritech.com","Test123$$")
+authentication\login\login_test.py:56: in loginWithCredentials
+    self.type('[name="email"]', email)
+C:\Users\Rishan\AppData\Local\Programs\Python\Python313\Lib\site-packages\seleniumbase\fixtures\base_case.py:1099: in type
+    self.update_text(selector, text, by=by, timeout=timeout, retry=retry)
+C:\Users\Rishan\AppData\Local\Programs\Python\Python313\Lib\site-packages\seleniumbase\fixtures\base_case.py:947: in update_text
+    self.wait_for_ready_state_complete()
+C:\Users\Rishan\AppData\Local\Programs\Python\Python313\Lib\site-packages\seleniumbase\fixtures\base_case.py:4705: in wait_for_ready_state_complete
+    self._check_browser()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;login_test.LoginTest testMethod=test_swag_labs&gt;
+
+    def _check_browser(self):
+        """This method raises an exception if the active window is closed.
+        (This provides a much cleaner exception message in this situation.)"""
+        page_actions._reconnect_if_disconnected(self.driver)
+        active_window = None
+        with suppress(Exception):
+            active_window = self.driver.current_window_handle  # Fails if None
+        if not active_window:
+&gt;           raise NoSuchWindowException("Active window was already closed!")
+E           selenium.common.exceptions.NoSuchWindowException: Message: Active window was already closed!
+
+C:\Users\Rishan\AppData\Local\Programs\Python\Python313\Lib\site-packages\seleniumbase\fixtures\base_case.py:9195: NoSuchWindowException</failure></testcase></testsuite></testsuites>
