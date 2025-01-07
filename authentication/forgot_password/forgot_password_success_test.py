@@ -6,8 +6,8 @@ from seleniumbase import BaseCase
 BaseCase.main(__name__, __file__)
 
 
-class ForgotPasswordTest(BaseCase):       
-    def test_swag_labs(self):
+class ForgotPasswordSuccessTest(BaseCase):       
+    def test_contructor(self):
         self.openPage()
         
     def openPage(self):

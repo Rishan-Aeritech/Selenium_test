@@ -4,8 +4,8 @@ from seleniumbase import BaseCase
 BaseCase.main(__name__, __file__)
 
 
-class LoginTest(BaseCase):       
-    def test_swag_labs(self):
+class LoginSuccessTest(BaseCase):       
+    def test_contructor(self):
         self.openPage()
         
     def openPage(self):
@@ -59,13 +59,4 @@ class LoginTest(BaseCase):
         
     def fillBidderCredentials(self):
         self.loginWithCredentials("tech@aeritech.com","Test123$$")
-    
-    def fillBadCredentials(self):
-        self.loginWithCredentials("one@aeritech.com","Test")
-        
-    def fillAdminCredentials(self):
-        self.loginWithCredentials("admin@aeritech.com","Test123$$")
-        
-    def fillAffiliateCredentials(self):
-        self.loginWithCredentials("seth@equipbid.com","Test123$$")
         

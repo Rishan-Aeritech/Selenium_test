@@ -11,7 +11,7 @@ BaseCase.main(__name__, __file__)
 
 
 class ForgotPassswordNavigationTest(BaseCase):       
-    def test_swag_labs(self):
+    def test_contructor(self):
         self.openPage()
         
     def openPage(self):
