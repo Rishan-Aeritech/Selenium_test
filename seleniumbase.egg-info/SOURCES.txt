@@ -1,0 +1,8 @@
+README.md
+setup.py
+seleniumbase.egg-info/PKG-INFO
+seleniumbase.egg-info/SOURCES.txt
+seleniumbase.egg-info/dependency_links.txt
+seleniumbase.egg-info/entry_points.txt
+seleniumbase.egg-info/requires.txt
+seleniumbase.egg-info/top_level.txt
