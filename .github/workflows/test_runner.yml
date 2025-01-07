@@ -49,4 +49,4 @@ jobs:
         nosetests nothing2.py
     - name: Run Test for all test files 
       run: |
-        ./run-test-github.sh
+        chmod +x ./run-test-github.sh
