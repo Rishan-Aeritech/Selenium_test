@@ -35,7 +35,12 @@ setup(
     install_requires=[
         "setuptools>=70.2.0",
         "wheel>=0.44.0",
-        # Add other required dependencies here
+        'pytest==8.3.4',
+        "pytest-html==4.0.2",
+        'pytest-metadata==3.1.1',
+        "pytest-ordering==0.6",
+        'pytest-rerunfailures==15.0',
+        'pytest-xdist==3.6.1',
     ],
     python_requires=">=3.8",
     classifiers=[
