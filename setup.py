@@ -45,10 +45,6 @@ setup(
         "Operating System :: OS Independent",
     ],
     entry_points={
-        "console_scripts": [
-            "seleniumbase=seleniumbase.cli:main",
-            "sbase=seleniumbase.cli:main",
-        ],
     },
     extras_require={
         # Define optional dependencies here
