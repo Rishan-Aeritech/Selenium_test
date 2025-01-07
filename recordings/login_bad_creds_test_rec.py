@@ -2,8 +2,8 @@ from seleniumbase import BaseCase
 BaseCase.main(__name__, __file__)
 
 
-class LoginTest(BaseCase):
-    def test_swag_labs(self):
+class LoginBadCredsTest(BaseCase):
+    def test_contructor(self):
         self.open("https://admin-equip-bid-test.aeritech.com/login")
         self.type('input[name="email"]', "one@aeritech.com")
         self.type('input[name="password"]', "Test")
