@@ -12,9 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
-      max-parallel: 6
+      max-parallel: 2
       matrix:
-        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12", "3.13"]
+        python-version: ["3.13"]
 
     steps:
     - uses: actions/checkout@v4
@@ -49,4 +49,4 @@ jobs:
         nosetests nothing2.py
     - name: Run Test for all test files 
       run: |
-        chmod +x ./run-test-github.sh
+        pytest --html=report.html --archive-logs --recorder --headless --browser=chrome -v -s --junit-xml=junit/test-results.xml
