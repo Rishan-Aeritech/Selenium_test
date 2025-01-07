@@ -1,0 +1,29 @@
+authentication/forgot_password/forgot_password_navigation_test.py::ForgotPassswordNavigationTest::test_swag_labs
+--------------------------------------------------------------------
+Last Page: [WARNING! Browser Not Open!]
+ Duration: 2.24s
+  Browser: Chrome 131.0.6778.205
+   Driver: chromedriver 131.0.6778.204
+Timestamp: 1736238845  (Unix Timestamp)
+     Date: Tuesday, 7 January 2025
+     Time: 2:19:05 PM  (Nepal Standard Time, UTC+05:750)
+--------------------------------------------------------------------
+Traceback:
+  File "D:\Extra\python\Selenium_test\authentication\forgot_password\forgot_password_navigation_test.py", line 15, in test_swag_labs
+    self.openPage()
+    ~~~~~~~~~~~~~^^
+  File "D:\Extra\python\Selenium_test\authentication\forgot_password\forgot_password_navigation_test.py", line 18, in openPage
+    navigationTest(self)
+    ~~~~~~~~~~~~~~^^^^^^
+  File "D:\Extra\python\Selenium_test\authentication\forgot_password\forgot_password_navigation_test.py", line 24, in navigationTest
+    obj.open(obj.baseUrl)
+    ~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Rishan\AppData\Local\Programs\Python\Python313\Lib\site-packages\seleniumbase\fixtures\base_case.py", line 356, in open
+    self.wait_for_ready_state_complete()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Rishan\AppData\Local\Programs\Python\Python313\Lib\site-packages\seleniumbase\fixtures\base_case.py", line 4705, in wait_for_ready_state_complete
+    self._check_browser()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Rishan\AppData\Local\Programs\Python\Python313\Lib\site-packages\seleniumbase\fixtures\base_case.py", line 9195, in _check_browser
+    raise NoSuchWindowException("Active window was already closed!")
+Exception: Message: Active window was already closed!

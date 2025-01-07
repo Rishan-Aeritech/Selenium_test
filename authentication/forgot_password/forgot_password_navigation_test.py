@@ -1,5 +1,11 @@
+import sys
+import os
+
+# Add the parent folder to the system path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'constant')))
+
 import time; 
-from constant.Routes import *
+from Routes import *
 from seleniumbase import BaseCase
 BaseCase.main(__name__, __file__)
 

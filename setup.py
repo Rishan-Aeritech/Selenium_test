@@ -2,12 +2,11 @@ from setuptools import setup, find_packages
 
 setup(
     name="testproj",
-    version="0.1.0",  # Set dynamically if possible
+    version="1.1.0",  # Set dynamically if possible
     description="A powerful web automation and testing framework",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     author="Dynamic Author",  # Replace if not dynamic
-    url="https://github.com/seleniumbase/SeleniumBase",
     project_urls={
     },
     packages=find_packages(include=[

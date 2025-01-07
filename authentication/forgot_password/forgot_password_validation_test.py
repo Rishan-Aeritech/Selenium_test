@@ -1,6 +1,6 @@
 import time; 
-from authentication.forgot_password.forgot_password_navigation_test import  navigationTest
-from constant.Routes import *
+from forgot_password_navigation_test import  navigationTest
+from Routes import *
 from seleniumbase import BaseCase
 BaseCase.main(__name__, __file__)
 

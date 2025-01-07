@@ -1,5 +1,5 @@
 import time; 
-from constant.Routes import *
+from Routes import *
 from seleniumbase import BaseCase
 BaseCase.main(__name__, __file__)
 

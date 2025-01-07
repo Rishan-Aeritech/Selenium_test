@@ -1,8 +1,7 @@
 Metadata-Version: 2.1
 Name: testproj
-Version: 0.1.0
+Version: 1.1.0
 Summary: A powerful web automation and testing framework
-Home-page: https://github.com/seleniumbase/SeleniumBase
 Author: Dynamic Author
 Keywords: automation,testing,selenium,pytest
 Classifier: Programming Language :: Python :: 3
